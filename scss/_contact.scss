@@ -1,0 +1,87 @@
+// Styling for the contact section
+
+@media (min-width: 992px) {
+    #contactForm {
+        padding: 35px 30px 30px 30px;
+        background-color: rgba(217, 217, 217, 0.3);
+        border-radius: 10px;
+    }
+}
+
+.form-check-inline + .form-check-inline {
+    margin-left: 0;
+}
+
+.form-check-inline {
+    margin-right: 0.75rem;
+}
+
+section#contact {
+    background-color: $gray-lighter;
+    background-image: url('../img/footerbg.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    .section-heading {
+        color: white;
+        margin-bottom: 20px;
+    }
+
+    .contact-subheading {
+        color: white;
+        margin-bottom: 120px;
+        font-size: 24px;
+    }
+
+    .form-group {
+        margin-bottom: 25px;
+        input,
+        textarea {
+            padding: 20px;
+        }
+        input.form-control {
+            height: auto;
+        }
+        textarea.form-control {
+            height: 177px;
+        }
+    }
+
+    @media (min-width: 768px) and (max-width: 992px) {
+        .form-group {
+            textarea.form-control {
+                height: 143px;
+            }
+        }
+    }
+
+    .form-control:focus {
+        border-color: $theme-primary;
+        box-shadow: none;
+    }
+    ::-webkit-input-placeholder {
+        font-weight: 300;
+        color: $gray-lighter80;
+        @include bold-font;
+    }
+    :-moz-placeholder {
+        font-weight: 300;
+        color: $gray-lighter80;
+        /* Firefox 18- */
+        @include bold-font;
+    }
+    ::-moz-placeholder {
+        font-weight: 300;
+        color: $gray-lighter80;
+        /* Firefox 19+ */
+        @include bold-font;
+    }
+    :-ms-input-placeholder {
+        font-weight: 300;
+        color: $gray-lighter80;
+        @include bold-font;
+    }
+    .text-danger {
+        color: $theme-danger;
+    }
+}

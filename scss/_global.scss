@@ -1,0 +1,195 @@
+// Global styling for this template
+body {
+    overflow-x: hidden;
+    @include body-font;
+}
+
+p {
+    line-height: 1.75;
+}
+
+a {
+    color: $theme-primary;
+    &.active,
+    &:active,
+    &:focus,
+    &:hover {
+        color: darken($theme-primary, 10%);
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 700;
+    @include heading-font;
+}
+
+.card {
+    margin-bottom: 20px;
+}
+
+.card1text {
+    background-color: rgba(179, 0, 0, 0.8);
+    padding: 8px;
+    position: absolute;
+    bottom: 0;
+    display: none;
+}
+.card1title {
+    color: rgb(179, 0, 0);
+    font-family: Montserrat;
+    font-size: 20px;
+}
+
+.card2text {
+    background-color: rgba(102, 153, 255, 0.8);
+    padding: 8px;
+    position: absolute;
+    bottom: 0;
+    display: none;
+}
+.card2title {
+    color: rgb(102, 153, 255);
+    font-family: Montserrat;
+    font-size: 20px;
+}
+
+.card3text {
+    background-color: rgba(0, 204, 0, 0.8);
+    padding: 8px;
+    position: absolute;
+    bottom: 0;
+    display: none;
+}
+.card3title {
+    color: rgb(0, 204, 0);
+    font-family: Montserrat;
+    font-size: 20px;
+}
+
+.card4text {
+    background-color: rgba(0, 102, 0, 0.8);
+    padding: 8px;
+    position: absolute;
+    bottom: 0;
+    display: none;
+}
+.card4title {
+    color: rgb(0, 102, 0);
+    font-family: Montserrat;
+    font-size: 20px;
+}
+
+.card5text {
+    background-color: rgba(204, 102, 153, 0.8);
+    padding: 8px;
+    position: absolute;
+    bottom: 0;
+    display: none;
+}
+.card5title {
+    color: rgb(204, 102, 153);
+    font-family: Montserrat;
+    font-size: 20px;
+}
+
+.card6text {
+    background-color: rgba(255, 153, 0, 0.8);
+    padding: 8px;
+    position: absolute;
+    bottom: 0;
+    display: none;
+}
+.card6title {
+    color: rgb(255, 153, 0);
+    font-family: Montserrat;
+    font-size: 20px;
+}
+
+.card7text {
+    background-color: rgba(153, 153, 153, 0.8);
+    padding: 8px;
+    position: absolute;
+    bottom: 0;
+    display: none;
+}
+.card7title {
+    color: rgb(153, 153, 153);
+    font-family: Montserrat;
+    font-size: 20px;
+}
+
+.card8text {
+    background-color: rgba(179, 0, 0, 0.8);
+    padding: 8px;
+    position: absolute;
+    bottom: 0;
+    display: none;
+}
+.card8title {
+    color: rgb(179, 0, 0);
+    font-family: Montserrat;
+    font-size: 20px;
+}
+
+section {
+    padding: 80px 0;
+    h2.section-heading {
+        font-size: 40px;
+        margin-top: 0;
+        margin-bottom: 15px;
+    }
+    h3.section-subheading {
+        font-size: 18px;
+        font-weight: 200;
+
+        margin-bottom: 75px;
+        text-transform: none;
+        @include heading-font;
+    }
+}
+@media (min-width: 768px) {
+    section {
+        padding: 80px 0;
+    }
+}
+
+@media (min-width: 992px) {
+    .card1text,
+    .card2text,
+    .card3text,
+    .card4text,
+    .card5text,
+    .card6text,
+    .card7text,
+    .card8text {
+        display: block;
+    }
+}
+
+// Highlight color customization
+::-moz-selection {
+    background: $theme-primary;
+    text-shadow: none;
+}
+
+::selection {
+    background: $theme-primary;
+    text-shadow: none;
+}
+
+img::selection {
+    background: transparent;
+}
+
+img::-moz-selection {
+    background: transparent;
+}
+
+body {
+    -webkit-tap-highlight-color: $theme-primary;
+}
